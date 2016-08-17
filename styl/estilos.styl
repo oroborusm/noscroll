@@ -35,13 +35,13 @@ footer
     color #999
     font-size 16px
     text-align center
-header
-  //background linear-gradient(to bottom, rgba(255,255,255,0.4) 0%,rgba(255,255,255,0) 100%)
-  left 0
-  position absolute
-  top 0
-  width 100%
-  //z-index 4
+// header
+//   //background linear-gradient(to bottom, rgba(255,255,255,0.4) 0%,rgba(255,255,255,0) 100%)
+//   left 0
+//   position absolute
+//   top 0
+//   width 100%
+//   //z-index 4
 input
 textarea
   border 0
@@ -71,7 +71,7 @@ section
 section
   border-bottom 4px solid #660777
 textarea
-  height 200px
+  height 150px
 .backgroundNegro
   background black
 .backgroundMora
@@ -209,35 +209,81 @@ textarea
   //background linear-gradient(to bottom, rgba(255,255,255,0.4) 0%,rgba(255,255,255,0) 100%)
   margin 0 auto
   //max-width 1050px
-  padding 10px 0
+  padding 20px 0
   position fixed
   top 0
   width 100%
   z-index 1
   header
+    height 60px
     margin 0 auto
     //max-width 1050px
     position relative
     width 100%
-    img
-      margin 0
-      padding 0
-      width 100px
-    img
-    ul
-      display inline-block
-    ul
-      list-style-type none
-      margin 0
-      li
-        display inline-block
+    .logo
+      left 0
+      position absolute
+      right 0
+      width 180px
+      img
+        margin 0
+        padding 0
+        width 100%
+    .menu
+      position absolute
+      right 0
+      ul
+        margin 0
+        padding 0
+        li
+          display inline-block
+          transition .35s
+          width 50px
+          a
+            display block
+            img
+              margin-top 5px
+              width 100%
+          &:hover
+            transform scale(1.3)
+.ico
+  //background pink
+  height 50px
+  left -60px
+  position absolute
+  top 5px
+  width 50px
+// iconos
+.ceoicon
+  background url('../img/ceoicon.svg')
+  background-size cover
+  background-repeat no-repeat
+.gridicon
+  background url('../img/gridicon.svg')
+  background-size cover
+  background-repeat no-repeat
+.locationicon
+  background url('../img/locationicon.svg')
+  background-size cover
+  background-repeat no-repeat
+.systemicon
+  background url('../img/systemicon.svg')
+  background-size cover
+  background-repeat no-repeat
+.teamicon
+  background url('../img/teamicon.svg')
+  background-size cover
+  background-repeat no-repeat
+
+// fin iconos
 .item
   border-radius 50%
   box-shadow inset 0 0 0 16px rgba(102,7,119,0.6),0 1px 2px rgba(102,7,119,1)
-  height 230px
+  height 200px
+  margin 0 auto
   overflow hidden
   position relative
-  width 230px
+  width 200px
   img
     opacity 0
   .itemInner
@@ -325,14 +371,16 @@ textarea
   text-shadow 2px 2px 4px rgba(black, .9)
   top 50%
   transform translate(-50%,-50%)
+  width 100%
   z-index 1
   .bold
-    font-size 30px
+    font-size 35px
     margin 0
   .light
-    font-size 16px
+    font-size 20px
     margin 0
 .maxWidth
+  margin 0 auto
   max-width 1050px !important
 .maquinaImg
   //margin 0 auto
@@ -341,6 +389,8 @@ textarea
     display block
     margin 0 auto
     width 100%
+.noabsolute
+  position initial !important
 .onepage-pagination
   background rgba(black, .2)
   border-radius 40px
@@ -348,11 +398,11 @@ textarea
   margin 0
   padding 0
   position fixed
-  right 30px
+  right 10px
   text-align center
   top 50%
   transform translateY(-50%)
-  width 50px
+  width 30px
   z-index 2
   li
     height 50px
@@ -364,17 +414,19 @@ textarea
       background white
       border-radius 50%
       display block
-      height 20px
+      height 10px
       margin 0 auto
-      width 20px
+      width 10px
       &.active
         background transparent url('../img/amp.png')
         background-size cover
         background-repeat no-repeat
         height 50px
+        margin-left -10px
         width 50px
 .onepage-wrapper
   height 100%
+
 .rodImg
   background rgba(white, .3)
   border 4px solid #660777
@@ -411,8 +463,15 @@ textarea
     margin 0
     padding 0
     li
-      margin-bottom 1rem
       position relative
+      &:nth-child(1)
+        margin-bottom 10px
+      &:nth-child(2)
+        margin-bottom 10px
+      &:nth-child(3)
+        margin-bottom 10px
+      &:nth-child(4)
+        margin-bottom 10px
       img
         border-radius 50%
         margin 0 auto
@@ -473,6 +532,7 @@ textarea
     .rodImg
       background white
 .tiendasRow
+  height 100%
   margin 0 auto
   max-width 1050px
   position relative
@@ -482,19 +542,22 @@ textarea
   color white
   font-family 'geometos'
   font-size 16px
-  left 1rem
+  //left 5rem
   position absolute
   text-shadow 2px 2px 4px rgba(black, .4)
-  top 30px
-  width 100%
+  top 40px
+  //width 100%
   z-index 3
   h2
     margin 0
-  span
-    display block
-    font-size 36px
-    text-indent 110px
-    text-decoration underline
+    position relative
+    .tituloSectionRow
+      position relative
+      .destTitulo
+        display block
+        font-size 36px
+        //text-indent 110px
+        text-decoration underline
 // .unitTeam
 //   background rgba(colorNodriza, .7)
 //   bottom 0
