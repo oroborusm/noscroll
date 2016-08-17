@@ -12,6 +12,7 @@
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="js/modernizr.custom.js"></script>
   </head>
   <body>
@@ -74,7 +75,10 @@
 						</div>
             <div class="col-md-1"></div>
 						<div class="col-md-5 ceoImg">
-							<img src="img/ceo.jpg" alt="Marcelo Duarte - ceo Nodriza">
+              <figure>
+                <img src="img/ceo.jpg" alt="Marcelo Duarte - ceo Nodriza">
+                <div class="border-circle"></div>
+              </figure>
 							<p class="col-md-12">
 		            <span class="block geomeos">marcelo duarte</span>
 		            <span class="block">Ceo / Co-founder</span>
@@ -197,7 +201,7 @@
                       </svg>
                     </div>
                     <h3>Recicla</h3>
-                    <p>Tanto las ideas como los negocios que no son seleccionados, se reciclan de tal manera de poder derivarlos o esperar variables de entorno positivas que haga factible su ejecución (evaluación del Momento).
+                    <p>Las ideas y los negocios desechados, se reciclan a la espera de variables de entorno positivas para su posterior ejecución
                     </p>
                   </div>
                 </li>
@@ -399,30 +403,42 @@
                 </h2>
               </div>
               <div>
-                <div class="col-md-12">
-                  <ul class="tiendasLista rowNoheight middle-md">
-                    <li class="tiendaTrigger col-md-4">
-                      <div class="rodImg textCenter">
-                        <img src="img/tmoriginal.png" alt="toolmania" />
-                      </div>
-                      <h2>toolmania</h2>
-                      <p class="textCenter">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, omnis! Sint minus assumenda optio repudiandae exercitationem quis, sapiente illo minima vero praesentium cum aliquam eaque enim neque, culpa eius? Adipisci.</p>
-                    </li>
-                    <li class="tiendaTrigger col-md-4">
-                      <div class="rodImg textCenter">
-                        <img src="img/asistecar.png" alt="asistecar" />
-                      </div>
-                      <h2>asistecar</h2>
-                      <p class="textCenter">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sequi, iusto mollitia neque, repellendus placeat labore natus eos esse ipsam, a, voluptate assumenda quis? Maiores explicabo harum distinctio nihil nobis?</p>
-                    </li>
-                    <li class="tiendaTrigger col-md-4">
-                      <div class="rodImg textCenter">
-                        <img src="img/thoriginal.png" alt="things" />
-                      </div>
-                      <h2>things</h2>
-                      <p class="textCenter">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum laudantium alias commodi adipisci, ad placeat magni cum quisquam consectetur expedita? Aperiam a veritatis voluptates, non iure est, perferendis sunt nemo.</p>
-                    </li>
-                  </ul>
+                <div class="cards col-md-12">
+                  <div class="cardsInt">
+                    <ul class="rowNoheight middle-md">
+                      <li class="tiendaTrigger col-md-4 no-height">
+                        <div class="card">
+                          <div class="rodImg textCenter">
+                            <img src="img/tmoriginal.png" alt="toolmania" />
+                            <div class="border-circle-chico"></div>
+                          </div>
+                          <h3 class="paddingTopTittle">toolmania</h3>
+                          <p class="textCenter">Dedicado a las herramientas, en donde una de las principales características es poseer la mayor variedad de herramientas, con las mejores marcas en el mundo a un precio incomparable.</p>
+                        </div>
+                      </li>
+                      <li class="tiendaTrigger col-md-4 no-height">
+                        <div class="card">
+                          <div class="rodImg textCenter">
+                            <img src="img/asistecar.png" alt="asistecar" />
+                            <div class="border-circle-chico"></div>
+                          </div>
+                          <h3 class="paddingTopTittle">asistecar</h3>
+                          <p class="textCenter">Artículos outdoor de todo tipo, posee la mayor variedad y calidad en carros de arrastre, bolsos, respaldado por las mejores marcas del mercado.</p>
+                        </div>
+                      </li>
+                      <li class="tiendaTrigger col-md-4 no-height">
+                        <div class="card">
+                          <div class="rodImg textCenter">
+                            <img src="img/thoriginal.png" alt="things" />
+                            <div class="border-circle-chico"></div>
+                          </div>
+                          <h3 class="paddingTopTittle">things</h3>
+                          <p class="textCenter">
+                            Ese regalo diferente y sofisticado lo puedes encontrar acá.
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
 
                 </div>
               </div>
@@ -440,20 +456,34 @@
                 </span>
               </h2>
             </div>
-            <div class="col-md-8 ">
-             <form action="https://formspree.io/juan.bustamante.dg@gmail.com" method="POST" id="form">
+            <div class="col-md-5">
+             <form action="https://formspree.io/contacto@nodriza.cl" method="POST" id="form">
                <input type="text" name="nombre" placeholder="nombre">
                <input type="email" name="enviado_por" placeholder="mail">
                <textarea name="cometario" placeholder="comentario"></textarea>
                <input type="submit" value="Send">
              </form>
             </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-6 direccion">
+              <ul>
+                <li>
+                  <p><i class="material-icons">location_on</i> Avda. Diagonal Oriente #1355 Ñuñoa Santiago</p>
+                </li>
+                <li>
+                  <p><i class="material-icons">perm_phone_msg</i> +56 22 3792188</p>
+                </li>
+                <li>
+                  <p><i class="material-icons">feedback</i> <a href="mailto:contacto@nodriza.cl">contacto@nodriza.cl</a></p>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
       </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="js/jquery-2.1.4.js"></script>
+    <!-- <script src="js/jquery-2.1.4.js"></script> -->
     <!-- write animated -->
     <script src="js/typewriting.js"></script>
     <!-- owner functions -->

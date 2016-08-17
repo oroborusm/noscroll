@@ -56,6 +56,7 @@ input[type="submit"]
   background #42494b
   border 0
   color #ddd
+  float right
   margin-top 16px
   padding 5px
   width 150px
@@ -120,8 +121,10 @@ textarea
     margin 0
     padding 0
     width 100%
+    .no-height
+      height initial
     li
-      //height 250px
+      height 170px
       padding 0
       text-align center
       &:nth-child(1)
@@ -143,12 +146,27 @@ textarea
           background white
           border 4px solid white
           border-radius 50%
-          height 100px
+          height 90px
           margin 0 auto
           padding 10px
-          transform translateY(50px)
+          transform translateY(30px)
           transition .75s
-          width 100px
+          width 90px
+        .rodImg
+          background white
+          //border 4px solid #660777
+          border-radius 50%
+          display block
+          height 150px
+          margin 0 auto
+          position relative
+          transition .75s
+          width 150px
+          img
+            top 50%
+            position absolute
+            transform translate(-50%, -50%)
+            width 80%
         h3
           color #999999
           font-family 'geometos'
@@ -156,42 +174,75 @@ textarea
           font-weight 600
           margin 0
           text-transform uppercase
-          transform translateY(50px)
+          transform translateY(30px)
           transition .75s
           -webkit-font-smoothing initial
+        .paddingTopTittle
+          color white !important
+          padding-top 20px
         p
           //color #4d4d4d
           color white
           //display none
           font-size 13px
-          margin 10px 0 0 0
+          margin 10px auto 0
           opacity 0
           text-align center
-          transition .75s
-          transform translateY(-30px)
+          transition .75s linear
+          transform translateY(-50px)
           visibility hidden
         &:hover
           //background #a51fc1
           background #a51fc1
           //border 4px solid #a51fc1
+          .rodImg
+            //border 4px solid #a51fc1
+            height 130px
+            transform translateY(-60px)
+            width 130px
           .svg
             border 4px solid #a51fc1
-            transform translateY(-50px)
+            height 80px
+            transform translateY(-60px)
+            width 80px
           h3
             color white
+            font-size 16px
             text-shadow 2px 2px 4px rgba(black, .3)
-            transform translateY(-30px)
+            transform translateY(-60px)
             -webkit-font-smoothing antialiased
           p
             //display block
             opacity 1
             visibility visible
+.border-circle-chico
+  //background peru
+  border-radius 50%
+  box-shadow inset 0 0 0 8px rgba(102,7,119,0.6),0 1px 2px #660777
+  height 100%
+  position absolute
+  top 0
+  width 100%
 .ceoImg
   text-align center
-  img
-    border 4px solid #660777
-    border-radius 50%
-    width 80%
+  figure
+    height 300px
+    margin 0 auto
+    padding 0
+    position relative
+    width 300px
+    img
+      //border 4px solid #660777
+      border-radius 50%
+      width 100%
+    .border-circle
+      //background peru
+      border-radius 50%
+      box-shadow inset 0 0 0 16px rgba(102,7,119,0.6),0 1px 2px #660777
+      height 100%
+      position absolute
+      top 0
+      width 100%
   p
     color white
     font-family 'geometos'
@@ -258,6 +309,19 @@ textarea
   background url('../img/ceoicon.svg')
   background-size cover
   background-repeat no-repeat
+.direccion
+  ul
+    margin 0
+    padding 0
+    list-style-type none
+    li
+      text-align left
+      p
+        color white
+        font-family 'geometos'
+        position relative
+        a
+          color white
 .gridicon
   background url('../img/gridicon.svg')
   background-size cover
@@ -279,11 +343,11 @@ textarea
 .item
   border-radius 50%
   box-shadow inset 0 0 0 16px rgba(102,7,119,0.6),0 1px 2px rgba(102,7,119,1)
-  height 200px
+  height 190px
   margin 0 auto
   overflow hidden
   position relative
-  width 200px
+  width 190px
   img
     opacity 0
   .itemInner
@@ -426,21 +490,6 @@ textarea
         width 50px
 .onepage-wrapper
   height 100%
-
-.rodImg
-  background rgba(white, .3)
-  border 4px solid #660777
-  border-radius 50%
-  display block
-  height 150px
-  margin 0 auto
-  position relative
-  transition .75s
-  width 150px
-  img
-    top 50%
-    position absolute
-    transform translate(-50%, -50%)
 .row
   height 100%
   margin 0 auto
@@ -549,7 +598,7 @@ textarea
   //width 100%
   z-index 3
   h2
-    margin 0
+    margin 0 0 0 60px
     position relative
     .tituloSectionRow
       position relative
