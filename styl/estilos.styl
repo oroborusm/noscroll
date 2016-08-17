@@ -53,13 +53,17 @@ textarea
 // input[type="textarea"]
 //   height 100px
 input[type="submit"]
-  background #42494b
+  background #771e97
   border 0
   color #ddd
+  cursor pointer
   float right
   margin-top 16px
   padding 5px
+  transition .35s
   width 150px
+  &:hover
+    transform scale(1.2)
 main
   //height 650px
   position relative
@@ -121,8 +125,8 @@ textarea
     margin 0
     padding 0
     width 100%
-    .no-height
-      height initial
+    .otro-height
+      height 300px
     li
       height 170px
       padding 0
@@ -275,7 +279,7 @@ textarea
       left 0
       position absolute
       right 0
-      width 180px
+      width 150px
       img
         margin 0
         padding 0
@@ -490,6 +494,14 @@ textarea
         width 50px
 .onepage-wrapper
   height 100%
+.exito
+  text-align center
+  p
+    color white
+.ok
+  display block
+  margin 0 auto
+  width 200px
 .row
   height 100%
   margin 0 auto
