@@ -30,7 +30,7 @@ $(function(evt){
       dataType: "json",
       success: function(){
         console.log('se envio')
-        $('.centrado').html('<div class="exito"><img class="ok" src="img/like.svg">Se ha enviado tu información, nos pondremos en contacto contigo lo más pronto posible.</div>')
+        $('.correo').html('<div class="exito"><img class="ok" src="img/like.svg"><p>Se ha enviado tu información, nos pondremos en contacto contigo lo más pronto posible.</p></div>')
       },error: function(){
         console.log('algo paso')
       }
