@@ -54,7 +54,7 @@ $(function(evt){
 
   var typeWriting = new TypeWriting({
       targetElement   : document.getElementsByClassName('bold')[0],
-      inputString     : 'El proximo sera el tuyo...',
+      inputString     : 'El proximo sera el nuestro...',
       typing_interval : 130,
       blink_interval  : '1s',
       cursor_color    : '#660777',
